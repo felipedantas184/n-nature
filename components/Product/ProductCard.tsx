@@ -46,6 +46,7 @@ const CardLi = styled.li`
 const ImageWrapper = styled(Link)`
   position: relative;
   width: 100%;
+  max-height: 250px;
   flex: 1;
 
   display: flex;
@@ -100,7 +101,7 @@ const ViewProductButton = styled(Link)`
   margin: 0;
   padding: 8px 12px;
 
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   background-clip: padding-box;
 
   border: none;
@@ -138,7 +139,7 @@ const ViewProductButton = styled(Link)`
   }
 
   &:active {
-    background-color: ${storeData.primaryColor};
+    background-color: ${storeData.secondaryColor};
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
   }

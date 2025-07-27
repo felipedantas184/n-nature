@@ -121,7 +121,7 @@ const Card = styled.div`
 
 const Icon = styled.div`
   font-size: 22px;
-  color: ${storeData.primaryColor};
+  color: ${storeData.terciaryColor};
   display: flex;
   align-items: center;
   justify-content: center;

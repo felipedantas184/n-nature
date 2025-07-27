@@ -5,14 +5,14 @@ import { useState } from "react";
 import Banner from "./Banner";
 
 const ProductList = ({ products }: { products: Product[] }) => {
-  const [brandFilter, setBrandFilter] = useState('')
+  const [categoryFilter, setCategoryFilter] = useState('')
 
   function byName(a: Product, b: Product) {
     if (a.title < b.title) { return -1; }
     if (a.title > b.title) { return 1; }
     return 0;
   }
-  function byBrandName(a: string, b: string) {
+  function byCategoryName(a: string, b: string) {
     if (a < b) { return -1; }
     if (a > b) { return 1; }
     return 0;
@@ -23,27 +23,27 @@ const ProductList = ({ products }: { products: Product[] }) => {
       <Banner />
       <TextWrapper>
         <Title>Nossos Produtos</Title>
-        {(brandFilter) ? (
-          <Subtitle>{products.filter((product: Product) => product.brand == brandFilter).length} produtos encontrados</Subtitle>
+        {(categoryFilter) ? (
+          <Subtitle>{products.filter((product: Product) => product.category == categoryFilter).length} produtos encontrados</Subtitle>
         ) : (
           <Subtitle>{products.length} produtos encontrados</Subtitle>
         )}
       </TextWrapper>
 
       <BrandWrapper>
-        <RadioInput type="radio" name="brand" id='todos' defaultChecked />
-        <RadioLabel onClick={() => setBrandFilter('')} htmlFor="todos" >Todos</RadioLabel>
-        {products.map((product: Product) => product.brand).filter((brand: any, index: any, current_value: any) => current_value.indexOf(brand) === index).sort(byBrandName).map((brand: string) => (
-          <div key={brand}>
-            <RadioInput type="radio" name="brand" id={brand} />
-            <RadioLabel onClick={() => setBrandFilter(brand)} htmlFor={brand}>{brand}</RadioLabel>
+        <RadioInput type="radio" name="category" id='todos' defaultChecked />
+        <RadioLabel onClick={() => setCategoryFilter('')} htmlFor="todos" >Todos</RadioLabel>
+        {products.map((product: Product) => product.category).filter((category: any, index: any, current_value: any) => current_value.indexOf(category) === index).sort(byCategoryName).map((category: string) => (
+          <div key={category}>
+            <RadioInput type="radio" name="category" id={category} />
+            <RadioLabel onClick={() => setCategoryFilter(category)} htmlFor={category}>{category}</RadioLabel>
           </div>
         ))}
       </BrandWrapper>
 
       <GridList>
-        {(brandFilter) ? (
-          products.sort(byName).filter((product: Product) => product.brand == brandFilter).map((product: Product) => (
+        {(categoryFilter) ? (
+          products.sort(byName).filter((product: Product) => product.category == categoryFilter).map((product: Product) => (
             <ProductCard key={product.id} product={product} />
           ))
         ) : (

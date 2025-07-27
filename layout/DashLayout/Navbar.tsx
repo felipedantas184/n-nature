@@ -21,7 +21,7 @@ export default Navbar;
 
 
 const Container = styled.header`
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   height: 60px;
 
   display: flex;

@@ -13,14 +13,14 @@ export default function RegisterPage() {
 
         <meta property="og:title" content="Cadastro de Produto" />
         <meta property="og:description" content="Cadastre o seu novo produto!" />
-        <meta property="og:image" content="/apple-touch-icon.png" />
+        <meta property="og:image" content="/assets/icons/apple-touch-icon.png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content="Cadastro de Produto" />
 
         <meta property="twitter:title" content="Cadastro de Produto" />
         <meta property="twitter:description" content="Cadastre o seu novo produto!" />
-        <meta property="twitter:image" content="/apple-touch-icon.png" />
+        <meta property="twitter:image" content="/assets/icons/apple-touch-icon.png" />
       </Head>
 
       <DashboardLayout>

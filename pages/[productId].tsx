@@ -31,14 +31,14 @@ export default function DetailPage({ product }: { product: Product }) {
 
         <meta property="og:title" content={`${product.title} - ${product.brand} | ${storeData.title}`} />
         <meta property="og:description" content={`Compre seu ${product.title} - ${product.brand} com as melhores condições na ${storeData.title} `} />
-        <meta property="og:image" content="/apple-touch-icon.png" />
+        <meta property="og:image" content="/assets/icons/apple-touch-icon.png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content={`${product.title} - ${product.brand} | ${storeData.title}`} />
 
         <meta property="twitter:title" content={`${product.title} - ${product.brand} | ${storeData.title}`} />
         <meta property="twitter:description" content={`Compre seu ${product.title} - ${product.brand} com as melhores condições na ${storeData.title}`} />
-        <meta property="twitter:image" content="/apple-touch-icon.png" />
+        <meta property="twitter:image" content="/assets/icons/apple-touch-icon.png" />
       </Head>
 
       <Layout>

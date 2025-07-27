@@ -140,7 +140,6 @@ const CheckoutForm = () => {
         <Price>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', }).format(cart.reduce((acc: any, curr: any) => acc + curr.price * curr.quantity, 0))}</Price>
       </TopicWrapper>
       <CheckoutButton disabled={onLoad} type="submit" >{(onLoad) ? 'Processando Pedido...' : 'Finalizar Pedido'}</CheckoutButton>
-      {/** <a href={`https://wa.me//5586995185757?text=${mesage}`}>Bora</a>*/}
     </Wrapper>
   );
 }
@@ -202,7 +201,7 @@ const CheckoutButton = styled.button`
   margin: 0;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
 
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   background-clip: padding-box;
 
   border: 1px solid transparent;
@@ -240,7 +239,7 @@ const CheckoutButton = styled.button`
   }
 
   &:active {
-    background-color: ${storeData.primaryColor};
+    background-color: ${storeData.secondaryColor};
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
   }
@@ -262,16 +261,16 @@ const RadioInput = styled.input`
   display: none;
 
   &:checked + label {
-    background-color: #01cc65;
+    background-color: ${storeData.terciaryColor};
     color: #FFFFFF;
   }
 `
 const RadioLabel = styled.label`
   position: relative;
-  color: #01cc65;
+  color: ${storeData.terciaryColor};
   font-family: "Montserrat";
   font-size: 16px;
-  border: 2px solid #01cc65;
+  border: 2px solid ${storeData.terciaryColor};
   border-radius: 5px;
   padding: 8px 16px;
 

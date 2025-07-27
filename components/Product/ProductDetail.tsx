@@ -111,6 +111,7 @@ const Wrapper = styled.div`
 const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
+  max-height: 550px;
 
   display: flex;
   justify-content: center;

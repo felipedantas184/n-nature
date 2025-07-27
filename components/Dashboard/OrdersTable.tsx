@@ -147,14 +147,14 @@ const Wrapper = styled.div`
   border-radius: 10px;
 `
 const TableHeader = styled.div`
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   overflow-x: auto;
 `
 const TableContent = styled.div`
   height: 500px;
   overflow-x: auto;
   margin-top: 0px;
-  border: 1px solid ${storeData.primaryColor};
+  border: 1px solid ${storeData.secondaryColor};
   border-radius: 0 0 10px 10px;
 
   &::-webkit-scrollbar {

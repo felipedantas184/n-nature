@@ -43,7 +43,8 @@ const Card = styled.div`
 `
 const ImageWrapper = styled(Link)`
   position: relative;
-  width: 100px;
+  flex: 1;  
+  max-height: 125px;
 
   display: flex;
   justify-content: center;
@@ -84,6 +85,7 @@ const Title = styled.h2`
   color: #13131A;
   font-size: 14px;
   font-weight: 400;
+  white-space: pre-wrap;
 `
 const Price = styled.h4`
   color: #13131A;

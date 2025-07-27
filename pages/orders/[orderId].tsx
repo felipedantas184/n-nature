@@ -68,14 +68,14 @@ export default function OrderConfirmationPage({ order }: { order: Order }) {
 
         <meta property="og:title" content={`Seu Pedido Foi Registrado! | ${storeData.title}`} />
         <meta property="og:description" content="Falta pouco para receber seu pedido! Efetue o pagamento para confirmar o pedido." />
-        <meta property="og:image" content="/apple-touch-icon.png" />
+        <meta property="og:image" content="/assets/icons/apple-touch-icon.png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content={`Seu Pedido Foi Registrado! | ${storeData.title}`} />
 
         <meta property="twitter:title" content={`Seu Pedido Foi Registrado! | ${storeData.title}`} />
         <meta property="twitter:description" content="Falta pouco para receber seu pedido! Efetue o pagamento para confirmar o pedido." />
-        <meta property="twitter:image" content="/apple-touch-icon.png" />
+        <meta property="twitter:image" content="/assets/icons/apple-touch-icon.png" />
       </Head>
 
       <Layout>

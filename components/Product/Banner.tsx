@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Banner = () => {
   return ( 
     <ImageWrapper>
-      <Image src={(window.innerWidth > 768 ? '/assets/images/img/banner.jpg' : '/assets/images/img/banner.png')} alt={`${window.innerWidth}`}  fill sizes="(max-width: 384px)" className={'image'}/>
+      <Image src={(window.innerWidth > 768 ? '/assets/images/banners/banner_01.webp' : '/assets/images/banners/banner_01.webp')} alt={`${window.innerWidth}`}  fill sizes="(max-width: 384px)" className={'image'}/>
     </ImageWrapper>
    );
 }

@@ -41,7 +41,7 @@ export default Sidebar;
 
 
 const Container = styled.nav`
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   min-width: 250px;
   height: 100%;
   

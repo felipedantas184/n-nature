@@ -61,7 +61,7 @@ const AddButton = styled(Link)`
   padding: 12px;
   margin-top: 8px;
 
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   background-clip: padding-box;
 
   border: none;
@@ -99,7 +99,7 @@ const AddButton = styled(Link)`
   }
 
   &:active {
-    background-color: ${storeData.primaryColor};
+    background-color: ${storeData.secondaryColor};
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
   }
