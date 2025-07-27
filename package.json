@@ -9,17 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "@types/uuid": "^10.0.0",
+    "crc": "^4.3.2",
+    "firebase": "^12.0.0",
+    "next": "^15.4.4",
+    "nodemailer": "^7.0.5",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "^4.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.2"
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "styled-components": "^6.1.19",
+    "uuid": "^11.1.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.2",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
