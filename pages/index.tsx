@@ -30,20 +30,20 @@ export default function StorePage({ products }: { products: Product[] }) {
   return (
     <>
       <Head>
-        <title>{storeData.title}</title>
-        <meta name="description" content={storeData.description} />
+        <title>Ag Prata 925 | Você Sempre Linda</title>
+        <meta name="description" content="Joias confeccionadas em Prata 925 com garantia vitalicia sobre a autenticidade do metal." />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-        <meta property="og:title" content={storeData.title}/>
-        <meta property="og:description" content={storeData.description} />
+        <meta property="og:title" content="Ag Prata 925 | Você Sempre Linda"/>
+        <meta property="og:description" content="Joias confeccionadas em Prata 925 com garantia vitalicia sobre a autenticidade do metal." />
         <meta property="og:image" content="/assets/icons/apple-touch-icon.png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
-        <meta property="og:site_name" content={storeData.title}/>
+        <meta property="og:site_name" content="Ag Prata 925 | Você Sempre Linda"/>
 
-        <meta property="twitter:title" content={storeData.title}/>
-        <meta property="twitter:description" content={storeData.description} />
-        <meta property="twitter:image" content="/assets/icons/apple-touch-icon.png" />
+        <meta property="twitter:title" content="Ag Prata 925 | Você Sempre Linda"/>
+        <meta property="twitter:description" content="Joias confeccionadas em Prata 925 com garantia vitalicia sobre a autenticidade do metal." />
+        <meta property="twitter:image" content="https://agprata.vercel.app/assets/icons/apple-touch-icon.png" />
       </Head>
 
       <Layout>
