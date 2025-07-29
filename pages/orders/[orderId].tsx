@@ -87,9 +87,6 @@ export default function OrderConfirmationPage({ order }: { order: Order }) {
           <Wrapper>
             <ColumnWrapper>
               <OrderConfirmation order={order} />
-              <button onClick={handleCheckout}>
-                Pagar com Mercado Pago
-              </button>
               <OrderInfo order={order} />
             </ColumnWrapper>
             <OrderList order={order} />
