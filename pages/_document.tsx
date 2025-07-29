@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
           <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
           <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/logo-og.jpg" />
           <meta name="apple-mobile-web-app-title" content={storeData.title} />
           <link rel="manifest" href="/assets/icons/site.webmanifest" />
 
@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://agprata.vercel.app/" />
           <meta property="og:title" content={storeData.title} />
           <meta property="og:description" content={storeData.description} />
-          <meta property="og:image" content="https://agprata.vercel.app/assets/icons/apple-touch-icon.png" />
+          <meta property="og:image" content="https://agprata.vercel.app/assets/icons/logo-og.jpg" />
           <meta property="og:image:width" content="400" />
           <meta property="og:image:height" content="400" />
           <meta property="og:site_name" content={storeData.title} />
@@ -59,7 +59,7 @@ export default class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={storeData.title} />
           <meta name="twitter:description" content={storeData.description} />
-          <meta name="twitter:image" content="https://agprata.vercel.app/assets/icons/apple-touch-icon.png" />
+          <meta name="twitter:image" content="https://agprata.vercel.app/assets/icons/logo-og.jpg" />
 
         </Head>
         <body>
