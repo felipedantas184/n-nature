@@ -36,7 +36,7 @@ export default function StorePage({ products }: { products: Product[] }) {
 
         <meta property="og:title" content="Ag Prata 925 | Você Sempre Linda"/>
         <meta property="og:description" content="Joias confeccionadas em Prata 925 com garantia vitalicia sobre a autenticidade do metal." />
-        <meta property="og:image" content="/assets/icons/apple-touch-icon.png" />
+        <meta property="og:image" content="https://agprata.vercel.app/assets/icons/apple-touch-icon.png" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content="Ag Prata 925 | Você Sempre Linda"/>
