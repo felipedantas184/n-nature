@@ -39,7 +39,7 @@ export default function LoginPage() {
       <Wrapper>
         <LBox>
           <Heading>
-            <Image src={'/assets/images/img/EasyPhoneLogoTransparent.png'} alt={`Logo ${storeData.title}`} width={300} height={150} />
+            <Image src={'/assets/images/logos/storeTransparentLogo.png'} alt={`Logo ${storeData.title}`} width={300} height={150} />
             <Title>Login</Title>
           </Heading>
           <Form onSubmit={handleLogin}>
