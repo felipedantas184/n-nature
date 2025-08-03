@@ -15,7 +15,7 @@ const CheckoutCard = ({product} : {product : CartItem}) => {
         <Image src={product.imageUrl[0]} alt={product.title} fill className={'image'} sizes="(max-width: 384px)" />
       </ImageWrapper>
       <TextWrapper>
-        <Brand>{product.brand}</Brand>
+        <Brand>{product.category}</Brand>
         <Title>{product.title} - {product.selectedVariant.name}</Title>
         <Price>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', }).format(product.price)}</Price>
         <Buttons>

@@ -19,14 +19,14 @@ const Sidebar = ({ isOpen, toggle }: any) => {
           <TitleWrapper>
             <Logo href={'/'} ><Image src={'/assets/images/logos/storeTransparentLogo.png'} alt={`Logo ${storeData.title}`} fill /></Logo>
             <Close onClick={toggle}>
-              <FaTimes color="#13131A" />
+              <FaTimes color={storeData.primaryColor} />
             </Close>
           </TitleWrapper>
           <Menu>
-            <Item><PageInternalLink href={'/'}><FaHouse size={20} color={storeData.secondaryColor} />Página Inicial</PageInternalLink></Item>
-            <Item><PageLink target='_blank' href={storeData.instagramUrl} arial-label='Instagram'><FaInstagram size={20} color={storeData.secondaryColor} />Instagram</PageLink></Item>
-            <Item><PageLink target='_blank' href={storeData.locationUrl} arial-label='Google Maps'><IoLocationOutline size={20} color={storeData.secondaryColor} />Localização</PageLink></Item>
-            <Item><PageLink target='_blank' href={`mailto:${storeData.email}`} arial-label='Email'><FaRegEnvelope size={20} color={storeData.secondaryColor} />Email</PageLink></Item>
+            <Item><PageInternalLink href={'/'}><FaHouse size={20} color={storeData.primaryColor} />Página Inicial</PageInternalLink></Item>
+            <Item><PageLink target='_blank' href={storeData.instagramUrl} arial-label='Instagram'><FaInstagram size={20} color={storeData.primaryColor} />Instagram</PageLink></Item>
+            <Item><PageLink target='_blank' href={storeData.locationUrl} arial-label='Google Maps'><IoLocationOutline size={20} color={storeData.primaryColor} />Localização</PageLink></Item>
+            <Item><PageLink target='_blank' href={`mailto:${storeData.email}`} arial-label='Email'><FaRegEnvelope size={20} color={storeData.primaryColor} />Email</PageLink></Item>
           </Menu>
         </BigWrapper>
         {(user) ? (
@@ -49,7 +49,7 @@ interface Props {
 }
 
 const Container = styled.nav<Props>`
-  background: #F6F6F6;
+  background: ${storeData.secondaryColor};
   padding: 25px 0;
   
   top: 0;
@@ -124,7 +124,7 @@ const Menu = styled.ul`
   gap: 8px;
 `
 const Item = styled.li`
-  color: #13131A;
+  color: ${storeData.primaryColor};
   font-size: 16px;
   font-weight: 500;
   width: 80%;
@@ -178,7 +178,7 @@ const CheckoutButton = styled.a`
   margin: 0;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
 
-  background-color: ${storeData.secondaryColor};
+  background-color: ${storeData.primaryColor};
   background-clip: padding-box;
 
   border: 1px solid transparent;
@@ -186,7 +186,7 @@ const CheckoutButton = styled.a`
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
 
-  color: #fff;
+  color: ${storeData.secondaryColor};
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 600;
