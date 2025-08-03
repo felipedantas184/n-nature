@@ -1,13 +1,13 @@
 const storeData = {
-  title: 'Ag Prata 925 | Você Sempre Linda',
-  description: 'Joias confeccionadas em Prata 925 com garantia vitalicia sobre a autenticidade do metal.',
+  title: 'AG Joias | Amor em cada detalhe',
+  description: 'A AG Joias possui acessórios para todas as ocasiões da sua vida, há 5 anos no mercado com a qualidade e com o estilo que você merece. Aqui você encontra joias na prata 925 , prata 925 com ródio e prata 925 banhada a ouro 18k.',
   primaryColor: '#F6F6F6',
-  secondaryColor: '#935458',
-  terciaryColor: '#cc9194',
+  secondaryColor: '#d45d89',
+  terciaryColor: '#fe8ab5',
   instagramUrl: 'https://www.instagram.com/prataag_/',
   whatsAppNumber: '5586999533190',
-  email: 'prataag@gmail.com',
-  locationUrl: 'https://maps.app.goo.gl/6d6H7Mwp9h91jLZz8'
+  email: 'gabirbraga27@gmail.com',
+  locationUrl: 'https://maps.app.goo.gl/pByECpQqWVkxLH1W6'
 }
 
 export default storeData

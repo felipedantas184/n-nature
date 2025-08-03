@@ -103,8 +103,8 @@ const ProductUpdate = ({ product, setSelectedProduct }: { product: Product, setS
       {(variants.map((variant: Variant, i: any) => (
         <VariantWrapper key={variant.id} >
           <SpaceBetween>
-            <Label style={{alignSelf: 'flex-start', fontWeight: 600}} >Variant {i+1}</Label>
-            <FaTrash size={16} color="#F1AAAA" onClick={() => handleDelete(i)} /> 
+            <Label style={{ alignSelf: 'flex-start', fontWeight: 600 }} >Variante {i + 1}</Label>
+            {variants.length > 1 && <FaTrash size={16} color="#F1AAAA" onClick={() => handleDelete(i)} />}
           </SpaceBetween>
           <InputDoubleWrapper>
             <InputWrapper>
@@ -115,8 +115,6 @@ const ProductUpdate = ({ product, setSelectedProduct }: { product: Product, setS
               <Label>Estoque</Label>
               <Input type="number" value={variant.stock} onChange={e => handleChangeStock(e, i)} />
             </InputWrapper>
-          </InputDoubleWrapper>
-          <InputDoubleWrapper>
             <InputWrapper>
               <Label>Preço</Label>
               <Input type="number" value={variant.price} onChange={e => handleChangePrice(e, i)} />
@@ -237,7 +235,7 @@ const AddVariantButton = styled.button`
   margin: 0;
   padding: 8px;
 
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   background-clip: padding-box;
 
   border: none;

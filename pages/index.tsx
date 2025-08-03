@@ -30,8 +30,8 @@ export default function StorePage({ products }: { products: Product[] }) {
   return (
     <>
       <Head>
-        <title>Ag Prata 925 | Você Sempre Linda</title>
-        <meta name="description" content="Joias confeccionadas em Prata 925 com garantia vitalícia sobre a autenticidade do metal." />
+        <title>{storeData.title}</title>
+        <meta name="description" content={storeData.description} />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
 

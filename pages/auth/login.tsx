@@ -106,7 +106,7 @@ const Wrapper = styled.div`
 `
 const LBox = styled.div`
   flex: 5;
-  background-color: #FFFFFF;
+  background-color: ${storeData.terciaryColor};
   border-radius: 20px 0 0 20px;
 
   padding: 48px;
@@ -167,7 +167,7 @@ const BWrap = styled.div`
   gap: 8px;
 `
 const FButton = styled.button`
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.secondaryColor};
   color: #fff;
   font-weight: 500;
   font-size: 14px;

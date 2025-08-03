@@ -13,7 +13,7 @@ const Footer = () => {
         <Grid>
           <TextWrapper>
             <Group>
-              <FaTruck size={16} color={storeData.secondaryColor} />
+              <FaTruck size={16} color={storeData.primaryColor} />
               <Title>Localização</Title>
             </Group>
             <List>
@@ -23,7 +23,7 @@ const Footer = () => {
           </TextWrapper>
           <TextWrapper>
             <Group>
-              <FaCreditCard size={16} color={storeData.secondaryColor} />
+              <FaCreditCard size={16} color={storeData.primaryColor} />
               <Title>Pagamento</Title>
             </Group>
             <List>
@@ -34,18 +34,18 @@ const Footer = () => {
           </TextWrapper>
           <TextWrapper>
             <Group>
-              <FaMobile size={16} color={storeData.secondaryColor} />
+              <FaMobile size={16} color={storeData.primaryColor} />
               <Title>Redes Sociais</Title>
             </Group>
             <List>
               <SocialItem>
-                <a target='_blank' href={storeData.instagramUrl} arial-label='Instagram'><FaInstagram size={18} color={storeData.secondaryColor} />Instagram</a>
+                <a target='_blank' href={storeData.instagramUrl} arial-label='Instagram'><FaInstagram size={18} color={storeData.primaryColor} />Instagram</a>
               </SocialItem>
               <SocialItem>
-                <a target='_blank' href={`https://wa.me//${storeData.whatsAppNumber}?text=Ol%C3%A1!%20Vim%20a%20partir%20do%20site!`} arial-label='WhatsApp'><FaWhatsapp size={18} color={storeData.secondaryColor} />WhatsApp</a>
+                <a target='_blank' href={`https://wa.me//${storeData.whatsAppNumber}?text=Ol%C3%A1!%20Vim%20a%20partir%20do%20site!`} arial-label='WhatsApp'><FaWhatsapp size={18} color={storeData.primaryColor} />WhatsApp</a>
               </SocialItem>
               <SocialItem>
-                <a target='_blank' href={`mailto:${storeData.email}`} arial-label='Email'><FaEnvelope size={18} color={storeData.secondaryColor} />Email</a>
+                <a target='_blank' href={`mailto:${storeData.email}`} arial-label='Email'><FaEnvelope size={18} color={storeData.primaryColor} />Email</a>
               </SocialItem>
             </List>
           </TextWrapper>
@@ -61,7 +61,7 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.section`
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.terciaryColor};
 
   display: flex;
   flex-direction: column;
@@ -138,7 +138,7 @@ const Group = styled.div`
   gap: 4px;
 `
 const Title = styled.h4`
-  color: ${storeData.secondaryColor};
+  color: ${storeData.primaryColor};
   font-size: 18px;
 `
 const List = styled.ul`
@@ -149,14 +149,14 @@ const List = styled.ul`
   gap: 4px;
 `
 const ListItem = styled.li`
-  color: ${storeData.secondaryColor};
+  color: ${storeData.primaryColor};
   font-size: 16px;
   cursor: pointer;
 
   &::after {
     display:block;
     content: '';
-    border-bottom: solid 2px ${storeData.terciaryColor};  
+    border-bottom: solid 2px ${storeData.secondaryColor};  
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
   }
@@ -173,7 +173,7 @@ const SocialItem = styled.li`
   &::after {
     display:block;
     content: '';
-    border-bottom: solid 2px ${storeData.terciaryColor};  
+    border-bottom: solid 2px ${storeData.secondaryColor};  
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
   }
@@ -187,7 +187,7 @@ const SocialItem = styled.li`
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    color: ${storeData.secondaryColor};
+    color: ${storeData.primaryColor};
   }
 `
 const Copyright = styled.div`

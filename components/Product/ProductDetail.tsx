@@ -35,8 +35,8 @@ const ProductDetail = ({ product }: { product: Product }) => {
     <>
       <Section>
         <Wrapper>
-          <Link href={'/'} style={{position: 'absolute', zIndex: 2, left: '16px', top: '16px', WebkitTapHighlightColor: 'transparent'}} >
-            <FaArrowLeft style={{backgroundColor: '#C4C4C450', borderRadius: '50%', padding: '2px'}}  size={20} color="#33333A" />
+          <Link href={'/'} style={{ position: 'absolute', zIndex: 2, left: '16px', top: '16px', WebkitTapHighlightColor: 'transparent' }} >
+            <FaArrowLeft style={{ backgroundColor: '#C4C4C450', borderRadius: '50%', padding: '2px' }} size={20} color="#33333A" />
           </Link>
           <ImageWrapper>
             <Image src={product.imageUrl[0]} alt={product.title} fill className={'image'} />
@@ -67,7 +67,8 @@ const ProductDetail = ({ product }: { product: Product }) => {
                 )}
               </PriceWrapper>
             </TextWrapper>
-            <DetailButton product={selectedProduct} />
+            {selectedVariant.stock > 0 && <DetailButton product={selectedProduct} />}
+            {selectedVariant.stock === 0 && <span style={{ color: '#EE4B2B', fontSize: 14 }}>Produto esgotado</span>}
           </BigWrapper>
         </Wrapper>
       </Section>

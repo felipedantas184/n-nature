@@ -11,10 +11,10 @@ const Navbar = ({toggle, toggleCart} : any) => {
   return ( 
     <Container>
       <Wrapper>
-        <FaBars style={{cursor: "pointer"}} color={storeData.secondaryColor} size={24} onClick={toggle} />
+        <FaBars style={{cursor: "pointer"}} color={storeData.primaryColor} size={24} onClick={toggle} />
         <Logo href={'/'} ><Image src={'/assets/images/logos/storeTransparentLogo.png'} alt={`Logo ${storeData.title}`} fill /></Logo>
         <Bag>
-          <FaBagShopping color={storeData.secondaryColor} size={24} onClick={toggleCart}></FaBagShopping>
+          <FaBagShopping color={storeData.primaryColor} size={24} onClick={toggleCart}></FaBagShopping>
           <Badge>{cart.reduce((acc:any, curr:any) => acc + curr.quantity, 0)}</Badge>
         </Bag>
       </Wrapper>
@@ -25,7 +25,7 @@ const Navbar = ({toggle, toggleCart} : any) => {
 export default Navbar;
 
 const Container = styled.header`
-  background-color: ${storeData.primaryColor};
+  background-color: ${storeData.terciaryColor};
   height: 60px;
 
   display: flex;
