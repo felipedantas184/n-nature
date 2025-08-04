@@ -261,16 +261,16 @@ const RadioInput = styled.input`
   display: none;
 
   &:checked + label {
-    background-color: ${storeData.terciaryColor};
+    background-color: ${storeData.secondaryColor};
     color: #FFFFFF;
   }
 `
 const RadioLabel = styled.label`
   position: relative;
-  color: ${storeData.terciaryColor};
+  color: ${storeData.secondaryColor};
   font-family: "Montserrat";
   font-size: 16px;
-  border: 2px solid ${storeData.terciaryColor};
+  border: 2px solid ${storeData.secondaryColor};
   border-radius: 5px;
   padding: 8px 16px;
 
