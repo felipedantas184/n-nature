@@ -6,7 +6,7 @@ const storeData = {
   terciaryColor: '#F6F6F6',
   instagramUrl: 'https://www.instagram.com/nnature_desodorante/',
   whatsAppNumber: '5586981711006',
-  email: 'gabirbraga27@gmail.com',
+  email: 'nnaturebrasil@gmail.com',
   locationUrl: 'https://maps.app.goo.gl/EiAKJMPYURbuf5E9A'
 }
 
