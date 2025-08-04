@@ -100,8 +100,8 @@ const CheckoutForm = () => {
         alert("Não foi possível enviar o e-mail de confirmação.");
       }
 
-      localStorage.setItem("easy-phone-order", JSON.stringify(orderData));
-      localStorage.removeItem("easy-phone-cart");
+      localStorage.setItem("nature-order", JSON.stringify(orderData));
+      localStorage.removeItem("nature-cart");
 
       await updateStockAfterPurchase(cart);
 

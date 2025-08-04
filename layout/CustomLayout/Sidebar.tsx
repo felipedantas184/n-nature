@@ -49,7 +49,7 @@ interface Props {
 }
 
 const Container = styled.nav<Props>`
-  background: ${storeData.secondaryColor};
+  background: ${storeData.terciaryColor};
   padding: 25px 0;
   
   top: 0;
@@ -186,7 +186,7 @@ const CheckoutButton = styled.a`
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
 
-  color: ${storeData.secondaryColor};
+  color: ${storeData.terciaryColor};
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 600;

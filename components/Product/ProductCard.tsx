@@ -10,7 +10,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   const cart = useSelector((state: any) => state.cart);
 
   useEffect(() => {
-    localStorage.setItem("easy-phone-cart", JSON.stringify(cart));
+    localStorage.setItem("nature-cart", JSON.stringify(cart));
   }, [cart]);
 
   const isOutOfStock = product.variants.every(variant => variant.stock === 0);

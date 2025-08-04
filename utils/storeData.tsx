@@ -1,13 +1,13 @@
 const storeData = {
-  title: 'AG Joias | Amor em cada detalhe',
-  description: 'A AG Joias possui acessórios para todas as ocasiões da sua vida, há 5 anos no mercado com a qualidade e com o estilo que você merece. Aqui você encontra joias na prata 925 , prata 925 com ródio e prata 925 banhada a ouro 18k.',
-  primaryColor: '#F6F6F6',
-  secondaryColor: '#d45d89',
-  terciaryColor: '#fe8ab5',
-  instagramUrl: 'https://www.instagram.com/prataag_/',
-  whatsAppNumber: '5586999533190',
+  title: 'N-Nature | Proteção e cuidado para toda a família',
+  description: 'N-Nature é um desodorante 100% natural, com ingredientes veganos e consciente, desenvolvido para acompanhar sua rotina com inteligência e delicadeza, da infância à vida adulta, da axila às virilhas.',
+  primaryColor: '#6e8c5b',
+  secondaryColor: '#bea3c5',
+  terciaryColor: '#F6F6F6',
+  instagramUrl: 'https://www.instagram.com/nnature_desodorante/',
+  whatsAppNumber: '5586981711006',
   email: 'gabirbraga27@gmail.com',
-  locationUrl: 'https://maps.app.goo.gl/pByECpQqWVkxLH1W6'
+  locationUrl: 'https://maps.app.goo.gl/EiAKJMPYURbuf5E9A'
 }
 
 export default storeData

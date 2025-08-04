@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const cartSlice = createSlice({
   name: 'cart',
-  initialState: typeof window !== "undefined" && localStorage.getItem("easy-phone-cart") ? JSON.parse(localStorage.getItem("easy-phone-cart")) : [],
+  initialState: typeof window !== "undefined" && localStorage.getItem("nature-cart") ? JSON.parse(localStorage.getItem("nature-cart")) : [],
   reducers: {
     addToCart: (state, action) => {
       const itemExists = state.find((item) => item.id === action.payload.id && item.selectedVariant.id === action.payload.selectedVariant.id);

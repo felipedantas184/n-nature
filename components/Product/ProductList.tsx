@@ -20,7 +20,6 @@ const ProductList = ({ products }: { products: Product[] }) => {
 
   return (
     <Wrapper>
-      <Banner />
       <TextWrapper>
         <Title>Nossos Produtos</Title>
         {(categoryFilter) ? (
