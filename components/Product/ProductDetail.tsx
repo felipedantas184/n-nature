@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa6";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { calculateFrete } from "@/utils/calculateFrete";
 
 const ProductDetail = ({ product }: { product: Product }) => {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
@@ -30,6 +31,25 @@ const ProductDetail = ({ product }: { product: Product }) => {
   useEffect(() => {
     localStorage.setItem("nature-cart", JSON.stringify(cart))
   }, [cart])
+
+  const [cep, setCep] = useState('');
+  const [frete, setFrete] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleCalculateFrete = async () => {
+    setLoading(true);
+    setError('');
+    try {
+      const data = await calculateFrete(cep);
+      setFrete(data.data); // array de opções de frete
+      console.log(frete)
+    } catch (err) {
+      setError('Erro ao calcular frete');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -67,6 +87,21 @@ const ProductDetail = ({ product }: { product: Product }) => {
                 )}
               </PriceWrapper>
             </TextWrapper>
+
+            <div>
+              <input
+                type="text"
+                placeholder="Digite seu CEP"
+                value={cep}
+                onChange={(e) => setCep(e.target.value)}
+              />
+              <button onClick={handleCalculateFrete}>Calcular Frete</button>
+
+              {loading && <p>Calculando...</p>}
+              {error && <p>{error}</p>}
+              
+            </div>
+
             {selectedVariant.stock > 0 && <DetailButton product={selectedProduct} />}
             {selectedVariant.stock === 0 && <span style={{ color: '#EE4B2B', fontSize: 14 }}>Produto esgotado</span>}
           </BigWrapper>
