@@ -84,7 +84,7 @@ const OrdersTable = ({
             {(orders.sort(byDate).map((order: Order) => (
               <Tr key={order.id}>
                 <Td>{order.personal.name}</Td>
-                <Td>{(order.deliveryType === 'pickup' ? "Retirada" : `${order.delivery?.address}, ${order.delivery?.number}`)}</Td>
+                <Td>{(order.deliveryType === 'pickup' ? "Retirada" : `${order.delivery?.address}, ${order.delivery?.number} - ${order.delivery?.city}, ${order.delivery?.state}`)}</Td>
                 <Td>{order.cart.reduce((acc: any, curr: any) => `${acc} ${getProductName(curr.productId)} ${getVariantName(curr.productId, curr.variantId)} (x${curr.quantity})`, '')}</Td>
                 <Td>{order.paymentMethod}</Td>
                 <Td>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', }).format(order.amount)}</Td>
